@@ -22,7 +22,7 @@ int is_duplicated(int *arr, int len)
 	for(i = 0; i < len - 1; i++){	
 		for(j = i + 1; j < len; j++){
 			if(arr[i] == arr [j]){
-				printf("¼ıÀÚ´Â Çã¿ëÄ¡ ¾Ê°í ÀÖ½À´Ï´Ù. ÀçÀÔ·Â ÇØÁÖ¼¼¿ä.");
+				printf("ìˆ«ìëŠ” í—ˆìš©ì¹˜ ì•Šê³  ìˆìŠµë‹ˆë‹¤. ì¬ì…ë ¥ í•´ì£¼ì„¸ìš”.");
 				return 1;
 			}	
 		}
@@ -62,7 +62,7 @@ int main()
         count++;
         
         do{
-        	printf("Á¤¼ö %d°³¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ", ARR_NUM);
+        	printf("ì •ìˆ˜ %dê°œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ", ARR_NUM);
        	 	for(i = 0; i < ARR_NUM; i++){
         		scanf("%d", &user[i]);
         	}
@@ -90,9 +90,9 @@ int main()
         }
         if (strike == ARR_NUM)
         {
-            printf("%d¹ø¸¸¿¡¸ÂÃè½À´Ï´Ù!!\n", count);
+            printf("%dë²ˆë§Œì—ë§ì·„ìŠµë‹ˆë‹¤!!\n", count);
             return 0;
         }
-        printf("½ºÆ®¶óÀÌÅ© : %d, º¼ : %d\n", strike, ball);
+        printf("ìŠ¤íŠ¸ë¼ì´í¬ : %d, ë³¼ : %d\n", strike, ball);
     }
 }
